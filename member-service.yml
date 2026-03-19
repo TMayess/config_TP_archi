@@ -29,7 +29,12 @@ spring:
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    
+  error:
+    include-message: always
+    include-binding-errors: always
 
+    
 eureka:
   client:
     service-url:
