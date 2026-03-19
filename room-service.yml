@@ -24,7 +24,10 @@ spring:
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
-      
+  
+  error:
+    include-message: always
+    include-binding-errors: always
 
 eureka:
   client:
